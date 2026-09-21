@@ -27,3 +27,23 @@ Content-Type: application/json
 ###Delete Data
 DELETE http://localhost:4004/odata/v4/student-api/StudentSet('38c89b5d-5df0-4c1d-8ec1-2e6eb7504840')
 
+
+### Composition example
+Post http://localhost:4004/odata/v4/student-api/Authors
+Content-Type: application/json
+
+{
+      "name": "John Dae",
+      "books":[
+            {
+            "name" : "SAP Learning BTP",
+            "title": "BTP Book",
+            "publishDate": "10-10-2020"
+            },
+            {
+            "name" : "SAP CAPM",
+            "title": "CAPM Book",
+            "publishDate": "10-10-2021"
+            }
+      ]
+}

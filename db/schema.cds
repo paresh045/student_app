@@ -7,8 +7,8 @@ using {
 
 type nameType : String(50);
 
-aspect customAspect{
-    status: String;
+aspect customAspect {
+    status : String;
 }
 
 entity Students : cuid, managed, customAspect {
@@ -30,9 +30,21 @@ entity Courses : cuid, managed {
 }
 
 entity Address {
-    key addressID: Integer;
-    description: String;
-    city: String;
-    country: String;
-    pincode: Integer;
+    key addressID   : Integer;
+        description : String;
+        city        : String;
+        country     : String;
+        pincode     : Integer;
+}
+
+entity Books : cuid {
+    name: String;
+    title: String;
+    publishDate: String;
+    author: Association to one Authors; //managed Association we can use $ sign
+}
+
+entity Authors : cuid {
+    name: String;
+    books: Composition of many Books on books.author = $self;
 }

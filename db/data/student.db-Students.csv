@@ -1,0 +1,6 @@
+ID,name,address,email,mobile,age,gender
+a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d,"Aarav Sharma","123 MG Road, Mumbai, Maharashtra","aarav.sharma@example.com","+91 98765 43210",20,"Male"
+b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e,"Diya Patel","456 Residency Road, Bangalore, Karnataka","diya.patel@example.com","+91 87654 32109",21,"Female"
+c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f,"Rohan Das","789 Park Street, Kolkata, West Bengal","rohan.das@example.com","+91 76543 21098",22,"Male"
+d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a,"Ananya Iyer","101 Nungambakkam High Rd, Chennai, Tamil Nadu","ananya.iyer@example.com","+91 65432 10987",19,"Female"
+e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b,"Kabir Singh","202 Connaught Place, New Delhi, Delhi","kabir.singh@example.com","+91 91234 56789",23,"Male"

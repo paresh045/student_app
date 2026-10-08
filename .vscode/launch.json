@@ -2,19 +2,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "cds serve",
+      "name": "Run students_app-1",
+      "type": "node-terminal",
       "request": "launch",
-      "type": "node",
-      "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "cds",
-      "args": [
-        "serve",
-        "--with-mocks",
-        "--in-memory?"
-      ],
-      "skipFiles": [
-        "<node_internals>/**"
-      ]
+      "command": "npx cds watch --profile hybrid",
+      "cwd": "${workspaceFolder}/students_app",
+      "preLaunchTask": "dev-project-cap",
+      "envFile": "${workspaceFolder}/students_app/env/.env1",
+      "env": {
+        "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/students_app\\\",\\\"profileName\\\":\\\"\\\"}\"}"
+      }
     }
   ]
 }
